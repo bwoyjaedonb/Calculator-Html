@@ -1,0 +1,76 @@
+/* Reset margins and paddings for all elements, set a universal font family, and ensure consistent box-sizing */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+/*full view the container with blue background and center contents*/
+.container{
+  width: 100%;
+  height: 100vh;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Calculator */
+
+.calculator{
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+}
+/* Styling for all input elements inside the calculator form */
+
+.calculator form input{
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: #332902;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+  
+}
+/*Styling the header for the calculator*/
+.calculator h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+/* Display section inside the form */
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+ 
+  
+}
+/* Input field inside the display section */
+
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+}
+/*Equal button become wider*/
+
+form input.equal{
+  width: 145px;
+}
+/* Styling for operator buttons */
+
+form input.operator{
+  color: #332902;
+}
